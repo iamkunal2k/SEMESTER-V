@@ -1,0 +1,55 @@
+<html>
+
+<body>
+    <script>
+        function clickevent() {
+            document.write("Kunal was here!!!");
+        }
+
+        function out() {
+            var e = document.getElementById('hover1');
+            e.style.display = 'none';
+        }
+
+        var a = 0;
+        var b = 0;
+        var c = 0;
+        function changeBackground() {
+            var x = document.getElementById('bg');
+            x.style.backgroundColor = 'rgb(' + a + ', ' + b + ', ' + c + ')';
+            a += 1;
+            b += a + 1;
+            c += b + 1;
+            if (a > 255) a = a - b;
+            if (b > 255) b = a;
+            if (c > 255) c = b;
+        }
+
+        function hov() {
+            var e = document.getElementById('hover');
+            e.style.backgroundColor = "red";
+        }
+
+
+
+    </script>
+    <form>
+        clickevent <br>
+        <input type="button" onclick="clickevent()" value="Who was here ?" />
+    </form>
+    mouseout <br>
+    <div id="hover1" onmouseout="out()" style="background-color:blue;height:200px;width:200px;">
+    </div>
+    <br><br>
+    onkeyup <br>
+    <input id="bg" onkeyup="changeBackground()" placeholder="write something" style="color:aqua">
+
+    <br> onmouseover <br>
+    <div id="hover" onmouseover="hov()" style="background-color:beige;height:200px;width:200px;">
+    </div>
+
+    <br> onchange <br>
+    <input onchange="alert(this.value)" type="number">
+</body>
+
+</html>

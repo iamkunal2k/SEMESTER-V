@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login Page</title>
+</head>
+<style>
+
+	.Login {
+		width: 500px;
+		height: 400px;
+		border-radius: 50px;
+		background-color: skyblue;
+		margin-top: 50px;
+		margin-left: 60px;
+		margin-right: 60px;
+		padding-top: 40px;
+		margin-bottom: 50px;
+		overflow: hidden;
+		font-family: sans-serif;
+	}
+
+	.u-name{
+		margin-top: 10px;
+		font-size: 20px;
+		float : left;
+		padding-left: 30px;
+
+	}
+	.pass-word {
+		margin-top: 30px;
+		font-size: 20px;
+		float : left;
+		padding-left: 30px;
+		font-weight: bold;
+		margin-left: -330px;
+
+	}
+
+	#log {
+		margin-top: 60px;
+		width: 320px;
+		height: 40px;
+		border-radius: 25px;
+		font-size: 20px;
+		font-weight: bold;
+		border-style: none;
+
+	}
+
+	#Uname {
+		height: 26px;
+		width : 300px;
+		float: left;
+		margin-top: 22px;
+		border-radius: 40px;
+		margin-left: -105px;
+		border-style: none;
+	}
+
+
+
+	#Pass {
+
+		height: 26px;
+		width : 300px;
+		float: left;
+		margin-left: 28px;
+		border-radius: 40px;
+		border-style: none;
+	}
+
+	#check {
+		float: left;
+		margin-left: 40px;
+		margin-top: 8px;
+	}
+
+	span {
+		font-weight: bold;
+		float: left;
+		margin-top: 6px;
+	}
+
+	a {
+		float: right;
+		margin-right: 30px;
+	}
+
+	body {
+		background-color: aliceblue;
+		color:rgb(15, 20, 73);
+	}
+header {
+	color: rgb(208, 156, 1);
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-size: large;
+}
+
+</style>
+<body>
+
+	<center>
+		
+	<header><h1>Login Page</h1></header>
+	<div class="Login">
+		<form id="Login" method="get">
+			<label class="u-name"><b>User Name</b></label><br>
+			<input type="textbox" name="Username" placeholder="Username" id="Uname"><br><br>
+			<label class="pass-word">Password</label><br><br><br>
+			<input type="Password" name="Password" placeholder="Password" id="Pass"><br><br>
+			<input type="checkbox" name="" id="check"><span> Remember me</span>
+			<br><br>
+			<input type="submit" name="Submit" id="log" value="Login Here"><br><br><br>
+		
+			<div class="link">
+				<a href="#">Forgot Password</a>
+			</div>
+
+		</form>
+	</div>
+	</center>
+
+</body>
+</html>

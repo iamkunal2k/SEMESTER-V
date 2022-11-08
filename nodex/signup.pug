@@ -1,0 +1,15 @@
+extends ./layout
+block content
+    .container.mt-5
+        h1 SignUp Here
+        form(action='/signup',method="POST")
+            .mb-3
+                label.form-label(for='exampleInputName') Name
+                input#exampleInputName.form-control(type='text' aria-describedby='emailHelp',name="name")
+            .mb-3
+                label.form-label(for='exampleInputEmail1') Email address
+                input#exampleInputEmail1.form-control(type='email' aria-describedby='emailHelp',name="email")
+            .mb-3
+                label.form-label(for='exampleInputPassword1') Password
+                input#exampleInputPassword1.form-control(type='password',name="password")
+            button.btn.btn-primary(type='submit') Submit
